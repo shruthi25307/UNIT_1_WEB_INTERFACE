@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Stopwatch</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#141e30,#243b55);
+}
+
+.container{
+    width:420px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    box-shadow:0 8px 32px rgba(0,0,0,0.4);
+    color:white;
+}
+
+h1{
+    margin-bottom:15px;
+    letter-spacing:1px;
+}
+
+#display{
+    font-size:3.2rem;
+    font-weight:bold;
+    margin:20px 0 10px;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.1);
+}
+
+#status{
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.running{
+    color:#00e676;
+}
+
+.stopped{
+    color:#ff5252;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+button{
+    border:none;
+    border-radius:30px;
+    padding:12px 22px;
+    font-size:15px;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+button:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+    transform:none;
+}
+
+#startBtn{
+    background:#00c853;
+}
+
+#stopBtn{
+    background:#ff1744;
+}
+
+#lapBtn{
+    background:#2979ff;
+}
+
+#resetBtn{
+    background:#ff9100;
+}
+
+h3{
+    margin-bottom:10px;
+}
+
+#laps{
+    max-height:180px;
+    overflow-y:auto;
+    text-align:left;
+}
+
+#laps li{
+    list-style:none;
+    background:rgba(255,255,255,0.1);
+    margin:8px 0;
+    padding:10px;
+    border-radius:10px;
+}
+
+#laps::-webkit-scrollbar{
+    width:6px;
+}
+
+#laps::-webkit-scrollbar-thumb{
+    background:#999;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>⏱ Stopwatch</h1>
+
+    <div id="display">00:00:00</div>
+
+    <p id="status" class="stopped">● Stopped</p>
+
+    <div class="buttons">
+        <button id="startBtn" onclick="startTimer()">Start</button>
+        <button id="stopBtn" onclick="stopTimer()" disabled>Stop</button>
+        <button id="lapBtn" onclick="recordLap()">Lap</button>
+        <button id="resetBtn" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <h3>Lap Times</h3>
+    <ul id="laps"></ul>
+
+</div>
+
+<script>
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
+let timer = null;
+let lapCount = 1;
+
+function updateDisplay(){
+    let h = String(hours).padStart(2,'0');
+    let m = String(minutes).padStart(2,'0');
+    let s = String(seconds).padStart(2,'0');
+
+    document.getElementById("display").textContent =
+        `${h}:${m}:${s}`;
+}
+
+function runTimer(){
+    seconds++;
+
+    if(seconds === 60){
+        seconds = 0;
+        minutes++;
+    }
+
+    if(minutes === 60){
+        minutes = 0;
+        hours++;
+    }
+
+    updateDisplay();
+}
+
+function startTimer(){
+
+    if(timer === null){
+
+        timer = setInterval(runTimer,1000);
+
+        document.getElementById("status").textContent =
+            "● Running";
+        document.getElementById("status").className =
+            "running";
+
+        document.getElementById("startBtn").disabled = true;
+        document.getElementById("stopBtn").disabled = false;
+    }
+}
+
+function stopTimer(){
+
+    clearInterval(timer);
+    timer = null;
+
+    document.getElementById("status").textContent =
+        "● Paused";
+    document.getElementById("status").className =
+        "stopped";
+
+    document.getElementById("startBtn").disabled = false;
+    document.getElementById("stopBtn").disabled = true;
+}
+
+function resetTimer(){
+
+    clearInterval(timer);
+    timer = null;
+
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    lapCount = 1;
+
+    updateDisplay();
+
+    document.getElementById("laps").innerHTML = "";
+
+    document.getElementById("status").textContent =
+        "● Stopped";
+    document.getElementById("status").className =
+        "stopped";
+
+    document.getElementById("startBtn").disabled = false;
+    document.getElementById("stopBtn").disabled = true;
+}
+
+function recordLap(){
+
+    if(timer !== null){
+
+        let lapTime =
+            document.getElementById("display").textContent;
+
+        let li = document.createElement("li");
+
+        li.innerHTML =
+            `🏁 Lap ${lapCount}: <strong>${lapTime}</strong>`;
+
+        document.getElementById("laps").appendChild(li);
+
+        lapCount++;
+    }
+}
+</script>
+
+</body>
+</html>
