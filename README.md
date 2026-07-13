@@ -1,9 +1,58 @@
 # UNIT_1_WEB_INTERFACE
 
-1.Timer project
-Simple timer - stopwatch project with Start, Stop, Lap and Reset buttons with modern UI.
+⏱️ Timer / Stopwatch Project
+
+A simple and interactive stopwatch application built with a modern and responsive user interface. The application allows users to track elapsed time accurately, record lap times, and control the timer using intuitive action buttons.
+
+✨ Features
+▶️ Start the stopwatch
+⏸️ Stop/Pause the timer
+🔄 Reset the timer to zero
+🏁 Record multiple lap times
+📋 Display lap history
+🔴 Live status indicator (Running / Stopped)
+⏱️ Real-time time tracking (Hours : Minutes : Seconds)
+🎨 Modern and clean UI design
+📱 Responsive layout for different screen sizes
+⚡ Smooth and lightweight performance
+
+🚀 Key Highlights
+Easy-to-use stopwatch controls
+Accurate time measurement
+Attractive dark-themed interface
+Instant lap recording
+Beginner-friendly project structure
+
 <img width="1918" height="993" alt="image" src="https://github.com/user-attachments/assets/61f72b08-1458-474d-b57d-fab812ac71f0" />
 
+🛠️ Tech Stack
+HTML5
+CSS3
+JavaScript (ES6)
+
+📸 Functionalities
+Start Timer
+Stop Timer
+Reset Timer
+Record Lap Times
+Display Timer Status
+Dynamic Time Updates
+
+🎯 Future Enhancements
+Milliseconds support
+Countdown timer mode
+Dark/Light theme switcher
+Export lap times
+Keyboard shortcuts
+Save lap history in Local Storage
+
+📈 Benefits
+Helps track activities and workouts
+Useful for study sessions and productivity tasks
+Demonstrates JavaScript timing functions
+Great beginner project for DOM manipulation and event handling
+
+Timer / Stopwatch is a lightweight productivity tool that enables accurate time tracking with lap recording functionality and a modern user experience. ⏱️🚀
 
 
 ---
