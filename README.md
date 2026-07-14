@@ -59,7 +59,8 @@ Timer / Stopwatch is a lightweight productivity tool that enables accurate time 
 
 2. 📝 Task Manager
 
-LIVE WEBSITE - https://notewell2026.netlify.app/
+**LIVE WEBSITE - https://notewell2026.netlify.app/**
+
 A modern and responsive task management web application designed to help users organize notes, tasks, checklists, and study sessions efficiently. The application provides a clean interface with customizable settings, productivity tools, and local data storage for a seamless user experience.
 
 ✨ Features
