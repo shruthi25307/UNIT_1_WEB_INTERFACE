@@ -90,7 +90,7 @@ Customizable appearance settings
 
 🛠️ Tech Stack
 HTML5
-CSS3 / Tailwind CSS (if used)
+CSS3
 JavaScript (ES6+)
 React.js (if used)
 Local Storage API
