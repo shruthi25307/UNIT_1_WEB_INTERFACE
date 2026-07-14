@@ -28,11 +28,13 @@ Beginner-friendly project structure
 <img width="1917" height="878" alt="image" src="https://github.com/user-attachments/assets/7c69d510-5438-45dc-bf43-2ecfa234087f" />
 
 🛠️ Tech Stack
+
 HTML5
 CSS3
 JavaScript (ES6)
 
 📸 Functionalities
+
 Start Timer
 Stop Timer
 Reset Timer
@@ -41,6 +43,7 @@ Display Timer Status
 Dynamic Time Updates
 
 🎯 Future Enhancements
+
 Milliseconds support
 Countdown timer mode
 Dark/Light theme switcher
@@ -49,6 +52,7 @@ Keyboard shortcuts
 Save lap history in Local Storage
 
 📈 Benefits
+
 Helps track activities and workouts
 Useful for study sessions and productivity tasks
 Demonstrates JavaScript timing functions
@@ -66,6 +70,7 @@ Timer / Stopwatch is a lightweight productivity tool that enables accurate time 
 A modern and responsive task management web application designed to help users organize notes, tasks, checklists, and study sessions efficiently. The application provides a clean interface with customizable settings, productivity tools, and local data storage for a seamless user experience.
 
 ✨ Features
+
 📋 Create, edit, and delete tasks/notes
 ⭐ Pin important notes for quick access
 ✅ Manage checklists and to-do items
@@ -80,6 +85,7 @@ A modern and responsive task management web application designed to help users o
 🔔 Browser notification alerts for study timers
 💾 Local storage support (data saved in browser)
 📱 Fully responsive design for desktop and mobile
+
 🚀 Key Highlights
 
 Clean and modern UI
@@ -93,11 +99,13 @@ Customizable appearance settings
 <img width="1891" height="881" alt="image" src="https://github.com/user-attachments/assets/d49cd3ce-aa59-486d-89c1-daa02487f950" />
 
 🛠️ Tech Stack
+
 HTML5
 CSS3
 JavaScript (ES6+)
 
 📸 Modules
+
 All Notes
 Pinned Notes
 Checklists
@@ -108,6 +116,7 @@ Folder Management
 Settings & Personalization
 
 🎯 Future Enhancements
+
 User authentication
 Cloud synchronization
 Drag-and-drop task management
