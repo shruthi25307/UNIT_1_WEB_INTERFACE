@@ -1,6 +1,6 @@
 # UNIT_1_WEB_INTERFACE
 
-1. ⏱️ Timer / Stopwatch Project
+1. ⏱️ Stopwatch Project
 
 **LIVE WEBSITE: https://modernstopwatch2026.netlify.app/**
 
@@ -59,7 +59,7 @@ Timer / Stopwatch is a lightweight productivity tool that enables accurate time 
 
 ---
 
-2. 📝 Task Manager
+2. 📝 Notewell Task Manager
 
 **LIVE WEBSITE - https://notewell2026.netlify.app/**
 
@@ -124,6 +124,5 @@ Enhances productivity and focus
 Simplifies note management
 Provides a distraction-free workspace
 Supports efficient study planning
-
 
 Task Manager is a simple yet powerful productivity tool that combines note-taking, checklist management, and study tracking in one place which is inspired from Google Keep. 🚀
