@@ -9,13 +9,9 @@ A simple and interactive stopwatch application built with a modern and responsiv
 ✨ Features
 
 ▶️ Start the stopwatch
-
 ⏸️ Stop/Pause the timer
-
 🔄 Reset the timer to zero
-
 🏁 Record multiple lap times
-
 📋 Display lap history
 🔴 Live status indicator (Running / Stopped)
 ⏱️ Real-time time tracking (Hours : Minutes : Seconds)
