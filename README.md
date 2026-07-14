@@ -23,7 +23,7 @@ Attractive dark-themed interface
 Instant lap recording
 Beginner-friendly project structure
 
-<img width="1918" height="993" alt="image" src="https://github.com/user-attachments/assets/61f72b08-1458-474d-b57d-fab812ac71f0" />
+<img width="1917" height="878" alt="image" src="https://github.com/user-attachments/assets/7c69d510-5438-45dc-bf43-2ecfa234087f" />
 
 🛠️ Tech Stack
 HTML5
